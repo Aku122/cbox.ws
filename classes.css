@@ -1,0 +1,220 @@
+
+.cc_cauvong3 {
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 800% 800%;
+  animation: rainbowplus 8s ease infinite;
+  will-change: background-position;
+}
+
+.cc_cauvong {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes rainbow {
+  0%, 100% { color: rgb(255,0,0); }
+  8% { color: rgb(255,127,0); }
+  16% { color: rgb(255,255,0); }
+  25% { color: rgb(127,255,0); }
+  33% { color: rgb(0,255,0); }
+  41% { color: rgb(0,255,127); }
+  50% { color: rgb(0,255,255); }
+  58% { color: rgb(0,127,255); }
+  66% { color: rgb(0,0,255); }
+  75% { color: rgb(127,0,255); }
+  83% { color: rgb(255,0,255); }
+  91% { color: rgb(255,0,127); }
+}
+
+.cc_cauvong2 {
+  animation: rainbow 2.5s linear infinite;
+  will-change: color;
+}
+
+@keyframes rainbowplus { 
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 25%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glitchtxt { 
+  0% {
+    text-decoration: underline dashed blue;
+    font-style: normal;
+    font-weight: normal;
+  }
+  10% {
+    text-decoration: overline double brown;
+    font-style: italic;
+    font-weight: normal;
+  }
+  20% {
+    text-decoration: underline overline;
+    font-style: normal;
+    font-weight: normal;
+  }
+  25% {
+    text-decoration: underline overline line-through dotted lime;
+    font-style: italic;
+    font-weight: normal;
+  } 
+  30% {
+    text-decoration: underline overline dotted red;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  40% {
+    text-decoration: underline overline wavy blue;
+    font-style: italic;
+    font-weight: 100;
+  }
+  50% {
+    text-decoration: overline line-through dotted gray;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+  60% {
+    text-decoration: underline double cyan;
+    font-style: italic;
+    font-weight: bold;
+  }
+  70% {
+    text-decoration: line-through double pink;
+    font-style: normal;
+    font-weight: normal;
+  }
+  80% {
+    text-decoration: underline line-through dotted lime;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: normal;
+  }
+  90% {
+    text-decoration: overline underline line-through;
+    font-style: normal;
+    font-weight: normal;
+  }
+  100% {
+    text-decoration: line-through wavy orange;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: lowercase;
+  }
+}
+
+.cc_glitch {
+  animation: glitchtxt 3.5s linear infinite;
+  will-change: text-decoration, font-style, font-weight;
+}
+
+.cc_retro {
+  text-shadow: 0.7px 0.7px 0px #eee, 2px 2px 0px #707070;
+}
+
+.cc_neon {
+  text-shadow: 0 0 6px #0033ff, 0px 0 5px #5256e2, 0px 0 5px #072ce0;
+}
+
+.cc_ghost {
+  color: transparent;
+  text-shadow: -4px 4px rgba(179,179,179,.4), -3px 3px rgba(153,153,153,.2), -2px 2px rgba(179,179,179,.2), -1px 1px rgba(179,179,179,.2), 0px 0px rgba(128,128,128,.5), 1px -1px rgba(77,77,77,.6), 2px -2px rgba(77,77,77,.7), 3px -3px rgba(82,82,82,.8), 4px -4px rgba(77,77,77,.9), 5px -5px rgba(77,77,77,1);
+}
+
+.cc_blink {
+  animation: blinker 1.3s linear infinite;
+  will-change: opacity;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; } 
+}
+
+.cc_flux {
+  animation: flux 2s linear infinite;
+  color: #426DFB;
+  text-shadow: 0 0 3vw #2356FF;
+  will-change: color, text-shadow;
+}
+
+@keyframes flux {
+  0%, 100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+.cc_neon2 {
+  animation: neon 1s ease infinite;
+  color: #FB4264;
+  text-shadow: 0 0 3vw #F40A35;
+  will-change: color, text-shadow;
+}
+
+@keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+  font-display: swap;
+}
+
+.cc_flip {
+  display: inline-block;
+  transform: scale(-1, 1);
+}
+
+.cc_flip2 {
+  display: inline-block;
+  transform: scale(1, -1);
+}
+
+.cc_floating {   
+  display: inline-block;
+  animation: floating 4s ease-in-out infinite;
+  will-change: transform;
+} 
+
+@keyframes floating { 
+  0% { transform: translate(0, 0px); } 
+  50% { transform: translate(0px, -4.4px); } 
+  100% { transform: translate(0, 0px); }     
+}
+
+/* Tối ưu hóa hiệu suất khi tab không hoạt động */
+@media (prefers-reduced-motion: reduce) {
+  .cc_cauvong3, .cc_cauvong2, .cc_glitch, 
+  .cc_blink, .cc_flux, .cc_neon2, .cc_floating {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Chế độ tiết kiệm hiệu năng */
+.paused-animations .cc_cauvong3,
+.paused-animations .cc_cauvong2,
+.paused-animations .cc_glitch,
+.paused-animations .cc_blink,
+.paused-animations .cc_flux,
+.paused-animations .cc_neon2,
+.paused-animations .cc_floating {
+  animation-play-state: paused !important;
+}

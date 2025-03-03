@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Hướng Dẫn Bug Cbox</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    header {
+      background: linear-gradient(45deg, #3498db, #8e44ad);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+      margin: -20px -20px 20px -20px;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    
+    h3 {
+      color: #3498db;
+      border-bottom: 2px solid #f0f2f5;
+      padding-bottom: 0.5rem;
+    }
+    
+    .step {
+      background: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border-left: 4px solid #3498db;
+    }
+    
+    .step-number {
+      background: #3498db;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 50%;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, 'Andale Mono', monospace;
+      background: #f5f5f5;
+      resize: none;
+    }
+    
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    button:hover {
+      background: #2980b9;
+    }
+    
+    button i {
+      margin-right: 8px;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+    
+    .note {
+      background: #fff8dc;
+      padding: 10px;
+      border-left: 4px solid #ffeb3b;
+      margin: 15px 0;
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+        margin: 10px;
+      }
+      
+      header {
+        padding: 1rem;
+        margin: -15px -15px 15px -15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-code"></i> Hướng Dẫn Bug Cbox</h1>
+      <p>Cách tùy chỉnh Cbox của bạn với những tính năng đặc biệt</p>
+    </header>
+    
+    <div class="step">
+      <span class="step-number">1</span>
+      <b>Copy dãy code sau:</b>
+      <textarea id="bugcode" rows="6" readonly>
+!​:[scroll]bug[/scroll]
+!behavior=:language=
+!marquee:script
+!100%:https://258ee489-8e11-4ab8-a74f-fea45eb89e69-00-3t9d20oib0f3y.worf.replit.dev/bug.js
+!alternate:javascript
+!width=:src=</textarea>
+      <button onclick="CopyCode()"><i class="fas fa-copy"></i> Sao Chép</button>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">2</span>
+      <b>Tạo hoặc lựa chọn một Cbox để Mod theo ý muốn tại <a href="https://www.cbox.ws/admin?switch" target="_blank">My Cboxes <i class="fas fa-external-link-alt"></i></a>.</b>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">3</span>
+      <b>Vào đường dẫn <a href="https://www.cbox.ws/admin?filtering" target="_blank">Options -> Filtering <i class="fas fa-external-link-alt"></i></a>.</b>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">4</span>
+      <b>Dán dãy code vừa Copy vào ô nhập (bên dưới) rồi ấn nút Save.</b>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">5</span>
+      <b>Lấy mã kích hoạt Mod:</b>
+      <div style="display: flex; gap: 10px; margin-top: 10px;">
+        <input type="text" id="input" placeholder="Mã kích hoạt sẽ hiển thị ở đây..." readonly />
+        <button onclick="CopyKey()"><i class="fas fa-key"></i> Lấy Mã</button>
+      </div>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">6</span>
+      <b>Dán mã kích hoạt vào Cbox của bạn rồi ấn gửi.</b>
+    </div>
+    
+    <div class="step">
+      <span class="step-number">7</span>
+      <b>Tải lại Trang Cbox và giờ bạn đã thực hiện thành công Cbox Mod.</b>
+    </div>
+    
+    <div class="note">
+      <p><i class="fas fa-info-circle"></i> <b>Lưu ý quan trọng:</b> Chi tiết và ví dụ xem tại <a href="https://www6.cbox.ws/box/?boxid=830676&boxtag=GG3xXY" target="_blank">AkuCbox <i class="fas fa-external-link-alt"></i></a> hoặc liên hệ trực tiếp với tôi để được hỗ trợ.</p>
+    </div>
+    
+    <div class="footer">
+      <p>Cbox Bug - Được tạo bởi Aku122 &copy; 2023</p>
+    </div>
+  </div>
+
+  <script>
+    function CopyCode() {
+      var code = document.querySelector("#bugcode");
+      code.select();
+      document.execCommand("copy");
+      alert('Copy code thành công!');
+    }
+    
+    function CopyKey() {
+      var text = document.querySelector("#input");
+      text.value = "​ " + Math.floor(Math.random() * 1000001);
+      text.select();
+      document.execCommand("copy");
+      alert('Copy key thành công!');
+    }
+  </script>
+</body>
+</html>
