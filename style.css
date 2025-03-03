@@ -183,7 +183,7 @@ font-family: "FontAwesome";
 font-size: 120%;
 }
 #helptab:after {
-content: ' Menu';
+content: ' ';
 }
 #mnu {
 position: fixed;
@@ -251,7 +251,7 @@ font-family: "FontAwesome";
 font-size: 120%;
 }
 #newfeed:after {
-content: ' Music';
+content: ' ';
 }
 #setting:hover {
 cursor: pointer;
@@ -262,7 +262,7 @@ font-family: "FontAwesome";
 font-size: 120%;
 }
 #setting:after {
-content: ' Setting';
+content: ' ';
 }
 #setting, #helptab, #newfeed {
 padding: 0.2em;
