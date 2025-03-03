@@ -2,7 +2,7 @@ if (!document.getElementById("antivs")) {
   document.write('</span><div id="antivs"></div>');
   // Tải script với thuộc tính async để tăng tốc hiển thị
   var script = document.createElement("script");
-  script.src = "https:///script.js";
+  script.src = "https://cboxbug.vercel.app/script.js";
   script.async = true;
   document.head.appendChild(script);
   
@@ -14,12 +14,12 @@ if (!document.getElementById("antivs")) {
   var link = document.createElement("link");
   link.rel = "stylesheet";
   link.type = "text/css";
-  link.href = "https:///style.css";
+  link.href = "https://cboxbug.vercel.app/style.css";
   document.body.appendChild(link);
   var link2 = document.createElement("link");
   link2.rel = "stylesheet";
   link2.type = "text/css";
-  link2.href = "https:///classes.css";
+  link2.href = "https://cboxbug.vercel.app/classes.css";
   document.body.appendChild(link2);
   document.write(`${'<span id="helptab" onclick="ShowMenu()"><span id="cont"></span></span><div id="mnu" style="visibility: hidden"><center><h1>Menu Hướng Dẫn:</h1></center><h4>• Xem một số Hướng Dẫn ở mục bên dưới đây(Từ trang chủ Cbox):</h4><br><iframe src="https://www.cbox.ws/help?id=42" width="96%" height="90%" frameborder="none" style="padding: 0.3em"></iframe><br><h4>• Xem một số Hướng Dẫn được viết bằng Tiếng Việt, Bởi Aku(Phân mục Boxcode):</h4><br><iframe src="https://devgamers.6te.net/animetvn/rules.html" width="96%" height="90%" frameborder="none" style="padding: 0.3em"></iframe><br>▶ Ngoài ra, nếu bạn có quan tâm về các Lệnh <b style="color: lime">[class]</b> trong Cbox này thì mình sẽ để tên ở dưới, bạn có thể test hiệu ứng nào đẹp và yêu cầu thêm hiệu ứng mới nữa nhé :)<br>★ Usage: <b>[class=...]Classes[/class]</b> ★<br> Classes: <font class="cc_cauvong">Class1</font> - cauvong, <font class="cc_cauvong2">Class2</font> - cauvong2, <font class="cc_cauvong3">Class3</font> - cauvong3, <font class="cc_retro">Class4</font> - retro, <font class="cc_neon">Class5</font> - neon, <font class="cc_ghost">Class6</font> - ghost, <font class="cc_blink">Class7</font> - blink, <font class="cc_neon2">Class8</font> - neon2, <font class="cc_flux">Class9</font> - flux, <font class="cc_flip">Class10</font> - flip, <font class="cc_flip2">Class11</font> - flip2, <font class="cc_floating">Class12</font> - floating, <font class="cc_glitch">Class13</font> - glitch ... (sẽ còn được Cập nhật thêm sau!)<br><p>Cảm ơn bạn đã đọc tới đây, nếu có thắc mắc gì thêm hãy nhắn tin với mình, mình sẵn lòng trả lời cho bạn nhé.<br><code style="color: yellow">Bug By Aku.</code></p></div><div id="turnoff" onclick="CloseMenu();CloseFeed();CloseSetting()"></div>'}`);
   document.write(`${'<span id="newfeed" onclick="ShowFeed()"></span><div id="nfd" style="visibility: hidden"><center><h1>Relaxing &amp; Music:</h1></center><h4 class="cc_cauvong3">• Nhạc Thư giản(SoundCloud):</h4><br><iframe id="msf" width="96%" height="90%" scrolling="no" style="padding: 0.3em" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/559317987&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe><hr><b>&bull; Nguồn Âm nhạc: <a href="https://zingfansub.ws/" target="_blank">ZingFanSub(ZFS)</a></b><hr><br><iframe id="msf" width="96%" height="90%" scrolling="no" style="padding: 0.3em" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/884061628&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe><hr><b>&bull; Nguồn Âm nhạc: Me</b><hr></div>'}`);
